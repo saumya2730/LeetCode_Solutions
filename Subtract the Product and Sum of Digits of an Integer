@@ -1,0 +1,19 @@
+class Solution {
+    func subtractProductAndSum(_ n: Int) -> Int {
+        
+        var prod = 1
+        var sum = 0
+        var num = n
+        
+        while(num > 0)    
+        {    
+          var m = num % 10 
+          sum = sum + m
+          prod = prod * m
+          num = num / 10
+        }
+        
+        var diff = prod - sum
+        return diff
+    }
+}
