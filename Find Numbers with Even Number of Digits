@@ -1,0 +1,17 @@
+class Solution {
+    func findNumbers(_ nums: [Int]) -> Int {
+        
+    var count_of_num = 0
+    for i in nums
+        {
+            var s = String(i)
+            var length_of_el = s.count
+            if(length_of_el % 2 == 0)
+            {
+                count_of_num = count_of_num + 1
+            }
+        }
+   
+     return count_of_num   
+    }
+}
