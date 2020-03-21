@@ -1,0 +1,7 @@
+class Solution {
+    func toLowerCase(_ str: String) -> String {
+        
+        var s = str.lowercased()
+        return s
+    }
+}
